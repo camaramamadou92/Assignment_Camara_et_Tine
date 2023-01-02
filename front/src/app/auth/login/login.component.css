@@ -1,0 +1,93 @@
+hr {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 0.5em;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color:rgb(221, 221, 221);
+  border-style: inset;
+  border-width: 0.5px;
+}
+.button1 {
+  box-shadow: 0 8px 10px 0 rgba(72, 96, 231, 0.2), 0 6px 10px 0 rgba(78, 86, 234, 0.19);
+  padding: 13px 32%;
+  text-align: center;
+  border-radius: 5px;
+  border: solid rgb(75, 71, 187);
+  margin-top: 15px;
+  background-color: rgb(75, 71, 187);
+  color: white;
+}
+.button2 {
+  box-shadow: 0 5px 10px 0 rgba(72, 96, 200, 0.2), 0 6px 10px 0 rgba(78, 86, 234, 0.19);
+  padding: 13px 26%;
+  text-align: center;
+  border-radius: 5px;
+  border: solid rgb(46, 159, 211);
+  margin-top: 20px;
+  background-color: rgb(46, 159, 211);
+  color: white;
+}
+input{
+  width: 80%;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 3px solid rgb(227, 227, 227);
+}
+mat-card {
+  max-width: 600px;
+  margin-left: 10px;
+  text-align: center;
+  max-height: 700px;
+  margin-top: 10px;
+  min-width: 420px;
+  min-height: 450px;
+
+}
+.P5 {
+  background-color: rgb(227, 230, 230);
+}
+mat-card-title {
+  text-align: center;
+  margin-left: 23px;
+  font-size: 30px;
+  margin-top: 6px;
+}
+
+.header{
+  text-align: center;
+
+}
+.full-width {
+  width: 80%;
+}
+
+.button-row {
+  padding-top: 5px;
+}
+
+.button-row a {
+  margin-right: 8px;
+  text-align: center;
+}
+
+.forget-password{
+  padding-left: 0px;
+}
+
+.emailInput{
+  padding-top: 10px;
+}
+
+.contentBody {
+  padding: 60px 1rem;
+  background :#1b6ca8;
+  display: block;
+}
+
+.aLink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}

@@ -1,0 +1,67 @@
+.spacer{
+  flex: 1 1 auto;
+}
+.sign{
+  color: white;
+}
+
+.home {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: white;
+}
+.add {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: white;
+}
+.edit {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: white;
+}
+.about {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: white;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu{
+  background-color:rgb(74, 74, 186);
+  color: rgb(247, 247, 249);
+  border: 0ch;
+  margin-top: 0.5%;
+  margin-left: 1%;
+}
+.devoir{
+  margin-top: 1.5%;
+}
