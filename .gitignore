@@ -13,6 +13,7 @@
 # Local History for Visual Studio Code
 .history/
 .angular
+node_modules
 # Built Visual Studio Code Extensions
 *.vsix
 
