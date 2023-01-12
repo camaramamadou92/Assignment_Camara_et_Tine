@@ -11,11 +11,13 @@ const routes: Routes = [
 
   {
     path: '', loadChildren:() => import('./etudiant/etudiant.module')
-       .then(m => m.EtudiantModule),canActivate : [GuardGuard]
+       .then(m => m.EtudiantModule),
+       //canActivate : [GuardGuard]
   },
   {
     path: 'admin', loadChildren:() => import('./admin/admin.module')
-      .then(m => m.AdminModule),canActivate : [GuardGuard]
+      .then(m => m.AdminModule),
+      //canActivate : [GuardGuard]
   },
   {
    path: 'auth', loadChildren:() => import('./auth/auth.module')
