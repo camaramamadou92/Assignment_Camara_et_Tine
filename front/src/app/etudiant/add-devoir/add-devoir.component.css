@@ -1,0 +1,147 @@
+
+.mat-18 {
+margin-right: 8px;
+}
+.display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 70px;
+}
+
+
+
+.image {
+
+  background-image: url(./rendu.png);
+  background-size: cover ;
+}
+mat-tab-group {
+
+  width: 800px;
+  height: 650px;
+  margin-left: 400px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: aliceblue;
+}
+
+.card1 {
+  max-width: 300px;
+  max-height: 400px;
+  margin-top: 20px;
+  margin-left: 7px;
+
+
+}
+.card2 {
+  max-width: 300px;
+  max-height: 400px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+p {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 0.5em;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color:rgb(221, 221, 221);
+  border-style: inset;
+  border-width: 0.5px;
+}
+.button1 {
+  box-shadow: 0 8px 10px 0 rgba(72, 96, 231, 0.2), 0 6px 10px 0 rgba(78, 86, 234, 0.19);
+  padding: 13px 32%;
+  text-align: center;
+  border-radius: 5px;
+  border: solid rgb(75, 71, 187);
+  margin-top: 15px;
+  background-color: rgb(75, 71, 187);
+  color: white;
+}
+.button2 {
+  box-shadow: 0 5px 10px 0 rgba(72, 96, 200, 0.2), 0 6px 10px 0 rgba(78, 86, 234, 0.19);
+  padding: 13px 26%;
+  text-align: center;
+  border-radius: 5px;
+  border: solid rgb(46, 159, 211);
+  margin-top: 20px;
+  background-color: rgb(46, 159, 211);
+  color: white;
+}
+input{
+  width: 80%;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 3px solid rgb(227, 227, 227);
+}
+
+
+.P5 {
+  background-color: rgb(227, 230, 230);
+}
+mat-card-title {
+  text-align: center;
+  margin-left: 5px;
+  font-weight: bold;
+
+}
+
+.header{
+  text-align: center;
+
+}
+.full-width {
+  width: 80%;
+}
+
+.button-row {
+  padding-top: 5px;
+}
+
+.button-row a {
+  margin-right: 8px;
+  text-align: center;
+}
+
+.forget-password{
+  padding-left: 0px;
+}
+
+.emailInput{
+  padding-top: 10px;
+}
+
+.contentBody {
+  padding: 60px 1rem;
+  background :#1b6ca8;
+  display: block;
+}
+
+.aLink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}

@@ -1,0 +1,138 @@
+<!--<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile> <img src="../../../assets/rendu.png" width="300px" height="200px"></mat-grid-tile>
+
+  <mat-grid-tile class="P5">
+
+</mat-grid-tile>
+</mat-grid-list>>-->
+
+
+<div >
+  <mat-tab-group>
+      <mat-tab >
+        <ng-template mat-tab-label>
+           Liste Devoir
+        </ng-template>
+
+        <mat-grid-list cols = "3" rowHeight="2:2">
+          <mat-grid-tile>
+            <mat-card class="card1">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+              <mat-card-content >
+                     <mat-card-actions>
+                    <button mat-button (click)="onClick()" color="primary">DETAILS</button>
+                    <button mat-button (click)="onClick()" color="primary">RENDRE</button>
+                     </mat-card-actions>
+              </mat-card-content>
+                </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="card1">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+               <mat-card-content>
+                <mat-card-actions>
+               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="onClick" color="primary">RENDRE</button>
+                </mat-card-actions>
+         </mat-card-content>
+          </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="card2">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+               <mat-card-content>
+                <mat-card-actions>
+               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="onClick" color="primary">RENDRE</button>
+                </mat-card-actions>
+         </mat-card-content>
+          </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="card1">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+               <mat-card-content>
+                <mat-card-actions>
+               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="onClick" color="primary">RENDRE</button>
+                </mat-card-actions>
+         </mat-card-content>
+          </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="card1">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+               <mat-card-content>
+                <mat-card-actions>
+               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="onClick" color="primary">RENDRE</button>
+                </mat-card-actions>
+         </mat-card-content>
+          </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="card1">
+              <mat-card-header>
+              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
+               <div class="image"></div>
+                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+               </mat-card-header>
+               <img class="display" src="rendu.png" >
+               <mat-card-content>
+                <mat-card-actions>
+               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="onClick" color="primary">RENDRE</button>
+                </mat-card-actions>
+         </mat-card-content>
+          </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-paginator
+                      [length]="2"
+                      [pageSize]="1"
+                      [pageSizeOptions]="[5]"
+                      aria-label = "Selectionner une page">
+      </mat-paginator>
+
+
+
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Detail devoir
+        </ng-template>
+          Detail Devoir
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Rendre un Devoir
+        </ng-template>
+          rendre devoir choisi
+      </mat-tab>
+  </mat-tab-group>
+</div>

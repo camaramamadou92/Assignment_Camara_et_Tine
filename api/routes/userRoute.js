@@ -1,4 +1,7 @@
+
 let User = require('../model/user');
+require('mongoose')
+
 const bcrypt = require('bcrypt');
 // Récupérer tous les assignments (GET)
 function getUsers(req, res){
@@ -11,7 +14,7 @@ function getUsers(req, res){
     });
 }
 // Récupérer un assignment par son id (GET)
-function getUser(req, res){
+async function getUser(req, res){
     let userId = req.params.id;
 
     User.findOne({id: userId}, (err, user) =>{
@@ -21,22 +24,24 @@ function getUser(req, res){
 }
 
 // Ajout d'un assignment (POST)
-function postUser(req, res){
+ function postUser(req, res){
     let newuser = new User();
     newuser.id = req.body.id;
     newuser.name = req.body.name;
     newuser.email = req.body.email;
     newuser.password = req.body.password;
-    console.log("POST assignment reçu :");
-    console.log(newuser)
-    newuser.save( (err) => {
-        if(err){
-            res.send('cant post assignment ', err);
-        }
-        res.json({ message: `${newuser.nom} saved!`})
-    })
-}
-
+   
+        console.log("POST assignment reçu :");
+        console.log(newuser)
+        newuser.save( (err) => {
+            if(err){
+                res.send('cant post assignment ', err);
+            }
+            res.json({ message: `${newuser.name} saved!`});
+            console.log(newuser.name)
+        })
+    }
+     
 // Update d'un assignment (PUT)
 function updateUser(req, res) {
     console.log("UPDATE recu assignment : ");
@@ -47,6 +52,7 @@ function updateUser(req, res) {
             res.send(err)
         } else {
           res.json({message: 'updated'})
+         
         }
 
       // console.log('updated ', assignment)

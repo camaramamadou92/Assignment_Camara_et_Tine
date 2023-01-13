@@ -1,5 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { SignupService } from '../../_Services/signup.service';
+
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/_Services/token.service';
 
 @Component({
   selector: 'app-signup',
@@ -8,16 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit{
 
-
+  aide =false;
   form : any ={
     id : Math.floor(Math.random()*100000000000000000),
     email: null,
     password: null,
     name: null,
 
+
   }
 
-  constructor(private http: HttpClient){
+  constructor(private authService: SignupService, private router: Router, private tokenservice : TokenService,){
 
   }
 
@@ -25,11 +29,14 @@ export class SignupComponent implements OnInit{
 
     onSubmit(){
 
+           this.router.navigate(['add-devoir']);
            console.log(this.form);
-           this.http.post('http://localhost:8010/api/assignments', this.form).subscribe(
-            data => console.log(data),
-            err => console.log(err)
+           this.authService.signup(this.form).subscribe(
+            (data:any) => console.log(data),
+            (err: any) => console.log(err)
           )
+
+
 
   }
 
