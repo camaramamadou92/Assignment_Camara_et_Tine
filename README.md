@@ -2,6 +2,7 @@
 Projet angular sur les assignments
  ## Page d'authentification
  Notre page d'authentification est la suivante:
+ ![role](images/pageAuth.png)
  
  ## Démarrage du projet
  Avant tout, il faut faire "npm install" au niveau de l'api et du client
