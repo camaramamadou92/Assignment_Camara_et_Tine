@@ -1,26 +1,46 @@
- 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+node_modules/
+.idea
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-### VisualStudioCode ###
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/*.code-snippets
 
-# Local History for Visual Studio Code
-.history/
-.angular
-node_modules
-# Built Visual Studio Code Extensions
-*.vsix
-.idea
-.vscode
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+deploy.md
