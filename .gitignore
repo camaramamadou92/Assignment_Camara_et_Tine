@@ -16,7 +16,8 @@
 node_modules
 # Built Visual Studio Code Extensions
 *.vsix
-
+.idea
+.vscode
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
