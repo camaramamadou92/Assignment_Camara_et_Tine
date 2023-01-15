@@ -1,1 +1,11 @@
-<p>detail-devoir works!</p>
+
+<mat-card class="card1">
+<div *ngFor="let matiere of matierehelp">
+      <p class="p1">{{matiere.label}}</p>
+      <p class="p2">Professeur : {{matiere.profName}}</p>
+      <p class="p2">Adresse mail : {{matiere.email}}</p>
+
+</div>
+<img class="display" src='../../../assets/image1.jpg' >
+<button class="button1" (click)="rendre()">JE RENDS MON DEVOIR</button>
+</mat-card>

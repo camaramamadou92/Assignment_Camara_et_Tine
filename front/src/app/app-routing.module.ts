@@ -10,8 +10,6 @@ import { GuardGuard } from './_help/guard.guard';
 
 const routes: Routes = [
 
-
-
   {
     path: '', loadChildren:() => import('./etudiant/etudiant.module')
        .then(m => m.EtudiantModule),canActivate : [GuardGuard]

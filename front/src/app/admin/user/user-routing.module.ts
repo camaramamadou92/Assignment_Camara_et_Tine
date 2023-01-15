@@ -1,4 +1,4 @@
-import { AddDevoirComponent } from './../../etudiant/add-devoir/add-devoir.component';
+import { AddDevoirComponent } from '../../etudiant/add-devoir/add-devoir.component';
 import { DeleteComponent } from './delete/delete.component';
 import { CorrigeComponent } from './corrige/corrige.component';
 import { IndexComponent } from './index/index.component';

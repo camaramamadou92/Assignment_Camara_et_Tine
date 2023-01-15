@@ -4,6 +4,8 @@ import { DetailDevoirComponent } from './detail-devoir/detail-devoir.component';
 import { AddDevoirComponent } from './add-devoir/add-devoir.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const routes: Routes = [
   {
@@ -22,7 +24,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+    MatPaginatorModule,
+    MatNativeDateModule,],
   exports: [RouterModule]
 })
 export class EtudiantRoutingModule { }

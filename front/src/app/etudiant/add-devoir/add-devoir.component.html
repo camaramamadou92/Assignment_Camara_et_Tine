@@ -4,28 +4,24 @@
   <mat-grid-tile class="P5">
 
 </mat-grid-tile>
-</mat-grid-list>>-->
+</mat-grid-list>-->
 
 
 <div >
-  <mat-tab-group>
-      <mat-tab >
-        <ng-template mat-tab-label>
-           Liste Devoir
-        </ng-template>
-
         <mat-grid-list cols = "3" rowHeight="2:2">
           <mat-grid-tile>
             <mat-card class="card1">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==1">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/anglais.jpg" >
               <mat-card-content >
                      <mat-card-actions>
-                    <button mat-button (click)="onClick()" color="primary">DETAILS</button>
+                    <button mat-button (click)="Dangular0()" color="primary">DETAILS</button>
                     <button mat-button (click)="onClick()" color="primary">RENDRE</button>
                      </mat-card-actions>
               </mat-card-content>
@@ -34,14 +30,16 @@
           <mat-grid-tile>
             <mat-card class="card1">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==2">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/angular.svg.png" >
                <mat-card-content>
                 <mat-card-actions>
-               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="Dangular1()" color="primary">DETAILS</button>
                <button mat-button (click)="onClick" color="primary">RENDRE</button>
                 </mat-card-actions>
          </mat-card-content>
@@ -50,14 +48,16 @@
           <mat-grid-tile>
             <mat-card class="card2">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==4">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/Management Projet.jpg" >
                <mat-card-content>
                 <mat-card-actions>
-               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="Dangular2()" color="primary">DETAILS</button>
                <button mat-button (click)="onClick" color="primary">RENDRE</button>
                 </mat-card-actions>
          </mat-card-content>
@@ -66,14 +66,16 @@
           <mat-grid-tile>
             <mat-card class="card1">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==5">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/rendu.png" >
                <mat-card-content>
                 <mat-card-actions>
-               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="Dangular3()" color="primary">DETAILS</button>
                <button mat-button (click)="onClick" color="primary">RENDRE</button>
                 </mat-card-actions>
          </mat-card-content>
@@ -82,14 +84,16 @@
           <mat-grid-tile>
             <mat-card class="card1">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==6">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/Agilite.png" >
                <mat-card-content>
                 <mat-card-actions>
-               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="Dangular4()" color="primary">DETAILS</button>
                <button mat-button (click)="onClick" color="primary">RENDRE</button>
                 </mat-card-actions>
          </mat-card-content>
@@ -98,41 +102,23 @@
           <mat-grid-tile>
             <mat-card class="card1">
               <mat-card-header>
-              <!-- <img mat-card-image src="rendu.png" width="50 px" height="50 px">-->
-               <div class="image"></div>
-                  <mat-card-title><h1>Web Component</h1></mat-card-title>
+                <div *ngFor="let matiere of listeDesMatieres">
+                  <p *ngIf="matiere.id==7">
+                      Devoir intitulé {{matiere.label}}
+                  </p>
+                </div>
                </mat-card-header>
-               <img class="display" src="rendu.png" >
+               <img class="display" src="../../../assets/anglais.jpg" >
                <mat-card-content>
                 <mat-card-actions>
-               <button mat-button (click)="onClick" color="primary">DETAILS</button>
+               <button mat-button (click)="Dangular5()" color="primary">DETAILS</button>
                <button mat-button (click)="onClick" color="primary">RENDRE</button>
                 </mat-card-actions>
          </mat-card-content>
           </mat-card>
           </mat-grid-tile>
         </mat-grid-list>
-        <mat-paginator
-                      [length]="2"
-                      [pageSize]="1"
-                      [pageSizeOptions]="[5]"
-                      aria-label = "Selectionner une page">
-      </mat-paginator>
 
-
-
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Detail devoir
-        </ng-template>
-          Detail Devoir
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Rendre un Devoir
-        </ng-template>
-          rendre devoir choisi
-      </mat-tab>
-  </mat-tab-group>
 </div>
+
+

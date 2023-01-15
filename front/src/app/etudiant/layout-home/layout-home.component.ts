@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout-home.component.css']
 })
 export class LayoutHomeComponent {
-sidenav: any;
-opened=false;
+
+  constructor(){}
 
 }

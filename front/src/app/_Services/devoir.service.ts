@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { forkJoin, Observable, of } from 'rxjs';
 import { Assignment } from '../etudiant/layout-home/devoir-model';
 import { LoggingService } from '../_Services/login.service';
-import { bdInitialAssignments } from './data';
+
 
 @Injectable({
   providedIn: 'root'
@@ -70,37 +70,6 @@ export class AssignmentsService {
 
   // version naive qui ne renvoie rien
   // on en peut pas savoir quand tous les add auront été faits
-  peuplerBD() {
-    bdInitialAssignments.forEach(assignment => {
-      const a = new Assignment();
 
-      a.nom = assignment.nom;
-      a.dateDeRendu = new Date(assignment.dateDeRendu);
-      a.rendu = assignment.rendu;
-      a.id = assignment.id;
-
-      this.addAssignment(a)
-      .subscribe(reponse => {
-        console.log(assignment.nom + " inséré dans la BD");
-      })
-    })
-  }
-
-  // version non naïve
-  peuplerBDAvecForkJoin(): Observable<any> {
-    const appelsVersAddAssignment:any = [];
-
-    bdInitialAssignments.forEach((a) => {
-      const nouvelAssignment = new Assignment();
-
-      nouvelAssignment.id = a.id;
-      nouvelAssignment.nom = a.nom;
-      nouvelAssignment.dateDeRendu = new Date(a.dateDeRendu);
-      nouvelAssignment.rendu = a.rendu;
-
-      appelsVersAddAssignment.push(this.addAssignment(nouvelAssignment));
-    });
-    return forkJoin(appelsVersAddAssignment); // renvoie un seul Observable pour dire que c'est fini
-  }
 
 }

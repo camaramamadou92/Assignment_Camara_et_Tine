@@ -15,13 +15,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule} from '@angular/material/select';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+
 import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
-import { MatPaginatorModule} from '@angular/material/paginator'
+import { MatPaginatorModule} from '@angular/material/paginator';
+
+import { MatDividerModule } from '@angular/material/divider';
+import {MatInputModule} from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
 @NgModule({
   declarations: [
     AddDevoirComponent,
@@ -45,8 +52,16 @@ import { MatPaginatorModule} from '@angular/material/paginator'
    MatFormFieldModule,
    MatTabsModule,
    MatButtonModule,
-   MatPaginatorModule
+   MatPaginatorModule,
+   MatNativeDateModule,
+   MatDividerModule,
+   MatInputModule
 
-  ]
+
+  ],
+  providers: [
+    MatDatepickerModule,
+    MatNativeDateModule
+  ],
 })
 export class EtudiantModule { }
