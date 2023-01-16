@@ -12,7 +12,7 @@ margin-right: 8px;
 
 .image {
 
-  background-image: url(./rendu.png);
+  /*background-image: url(./rendu.png);*/
   background-size: cover ;
 }
 mat-grid-list {
